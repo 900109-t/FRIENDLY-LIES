@@ -10,7 +10,6 @@ const io = new Server(server);
 app.use(express.static("public"));
 app.use(express.json());
 
-const PORT = 3000;
 const ADMIN_PASSWORD = "admin123";
 
 let rooms = {};
