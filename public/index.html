@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FRIENDLY LIES</title>
+</head>
+<body>
+
+<h1>FRIENDLY LIES</h1>
+
+<button onclick="createRoom()">방 생성</button>
+<input id="roomInput" placeholder="Room ID">
+<button onclick="joinRoom()">입장</button>
+
+<div id="game" style="display:none;">
+<h2 id="round"></h2>
+<p id="ability"></p>
+<button onclick="sendChoice('coop')">협력</button>
+<button onclick="sendChoice('betray')">배신</button>
+<button onclick="useAbility()">능력 사용</button>
+<p id="log"></p>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
