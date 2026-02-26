@@ -1,7 +1,13 @@
 {
   "name": "friendly-lies",
   "version": "1.0.0",
+  "description": "FRIENDLY LIES multiplayer deception game",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "galmaegi345",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
     "socket.io": "^4.7.2"
