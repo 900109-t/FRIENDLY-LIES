@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Admin</h2>
+<pre id="stats"></pre>
+<script>
+setInterval(()=>{
+ fetch("/admin/stats")
+  .then(r=>r.json())
+  .then(d=>{
+    document.getElementById("stats").innerText=
+      JSON.stringify(d,null,2);
+  });
+},1000);
+</script>
+</body>
+</html>
